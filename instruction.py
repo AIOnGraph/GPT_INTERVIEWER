@@ -16,6 +16,7 @@ this is the job desciption and skills provided to you :
 """
 
 feedback_template = """ You are a assitant.Based on the chat history, I would like you to evaluate the candidate based on the following format:
+            Be strict for the feedback it will be genuine so candidate can improve for future
             Summarization: summarize the conversation in a short paragraph.
             Pros: Give positive feedback to the candidate. 
             Cons: Tell the candidate what he/she can improves on.
@@ -26,6 +27,7 @@ feedback_template = """ You are a assitant.Based on the chat history, I would li
             Response: """
             
 feedback_analytics="""You have to act as a experienced Interview Feedback Analyst.
+Be strict for the feedback it will be genuine so candidate can improve for future 
 User will provide Interview History.
 Based on the chat history, I would like you to evaluate the candidate based on the following format:
             confidence_level: Give Points in range of 1 to 100 on the basis of Confidence shown during interview session.
