@@ -19,7 +19,7 @@ def query(OPENAI_API_KEY):
     jd = st.text_area(
         "Please enter the job description here (If you don't have one, enter keywords, such as PostgreSQL or Python instead): ")
     st.session_state.jobdescription = jd
-    if len(st.session_state.messages) >= 16:
+    if len(st.session_state.messages) >= 10:
         if st.button("Submit Interview!"):
             st.session_state.display_analytics = True
             st.switch_page("pages/Feedback Analytics.py")
